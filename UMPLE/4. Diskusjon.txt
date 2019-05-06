@@ -1,0 +1,12 @@
+4.
+Koden er annerledes, det er i alle fall sant, men den genererte koden er rett og slett ikke brukbar. 
+Den kan bli brukbar om vi bygger om på den og kobler den sammen til et vanlig prosjekt. 
+Det kan være en lett måte å lage kode som skal bare holde på og modifisere generell data. 
+Problemet er at den ikke kan vise html, koble til en database og holde på jpa elementer.
+
+Som sagt kan dette bli brukt til å lage «enkle» klasser som bare tar tid og er generelle. 
+Derfor tenker jeg at dette programmet kan være skikkelig bra for bruk av generering av SQL kode. 
+Kan godt hende at jeg vil bruke dette til det i fremtiden.
+
+Nå har ikke jeg satt meg fullstendig inn i syntax-en og alt du kan gjøre, men siden selve programmet 
+er laget i UMPLE tipper jeg på at det går an å motstride mine ord ovenfor med UMPLE.
