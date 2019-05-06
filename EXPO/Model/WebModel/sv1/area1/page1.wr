@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area1#page1" name="Hovedside">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="155" gr:y="0" id="sv1#area1#page1#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" entity="ent2" linkOrder="sv1#area1#page1#pwu1#ln1">
+      <Link id="sv1#area1#page1#pwu1#ln1" name="Flow1" to="sv1#area1#page2" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+    <NoOpContentUnit gr:x="0" gr:y="5" id="sv1#area1#page1#gctu1" name="ResultatlisteOP" linkOrder="sv1#area1#page1#gctu1#ln4">
+      <Link id="sv1#area1#page1#gctu1#ln4" name="Flow4" to="sv1#area1#page5" automaticCoupling="true" type="normal" validate="true"/>
+    </NoOpContentUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#pwu1">
+          <layout:Link link="sv1#area1#page1#pwu1#ln1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#gctu1">
+          <layout:Link link="sv1#area1#page1#gctu1#ln4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
