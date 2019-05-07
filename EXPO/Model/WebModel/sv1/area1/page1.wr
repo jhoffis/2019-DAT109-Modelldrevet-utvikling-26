@@ -1,8 +1,16 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="145" gr:y="0" id="sv1#area1#page1" name="Hovedside" landmark="true" linkVisibilityPolicy="hide" customURLName="thisisactuallythemainpageandyoucantdoanythingaboutitmyman">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="175" gr:y="10" id="sv1#area1#page1" name="Hovedside" landmark="true" linkVisibilityPolicy="hide" customURLName="thisisactuallythemainpageandyoucantdoanythingaboutitmyman">
   <ContentUnits>
-    <NoOpContentUnit gr:x="0" gr:y="0" id="sv1#area1#page1#gctu2" name="Videref&#248;ringer" type="Button" linkOrder="sv1#area1#page1#gctu2#ln10">
+    <NoOpContentUnit gr:x="0" gr:y="35" id="sv1#area1#page1#gctu2" name="Videref&#248;ringer" type="Button" linkOrder="sv1#area1#page1#gctu2#ln10">
       <Link id="sv1#area1#page1#gctu2#ln10" name="Logg inn" to="sv1#area1#page6" automaticCoupling="true" type="normal" validate="true"/>
     </NoOpContentUnit>
+    <PowerIndexUnit gr:x="145" gr:y="5" id="sv1#area1#page1#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" blockFactor="20" blockWindow="2" entity="ent9" linkOrder="sv1#area1#page1#pwu1#ln2" displayAttributes="ent9#att16">
+      <Link id="sv1#area1#page1#pwu1#ln2" name="Stem" to="sv1#area1#page2#dau1" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page1#pwu1#ln2#par1" name="navn_KeyCondition1 [brukerId]" source="data[].ent9#att16" target="sv1#area1#page2#dau1#su1#kcond1.ent10#att18"/>
+        <LinkParameter id="sv1#area1#page1#pwu1#ln2#par2" name="standId_KeyCondition1 [standStandId]" source="data[].ent9#att15" target="sv1#area1#page2#dau1#su1#kcond1.ent10#att17"/>
+      </Link>
+      <SortAttribute attribute="ent9#att16" order="ascending"/>
+      <DefaultSortAttribute attribute="ent9#att16" order="ascending"/>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -37,6 +45,31 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area1#page1#gctu2">
           <layout:Link link="sv1#area1#page1#gctu2#ln10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#pwu1">
+          <layout:Attribute attribute="ent9#att16"/>
+          <layout:Link link="sv1#area1#page1#pwu1#ln2"/>
+          <layout:Link link="sv1#area1#page1#pwu1ent9#att16"/>
+          <layout:Link link="sv1#area1#page1#pwu1First"/>
+          <layout:Link link="sv1#area1#page1#pwu1Previous"/>
+          <layout:Link link="sv1#area1#page1#pwu1Block"/>
+          <layout:Link link="sv1#area1#page1#pwu1Next"/>
+          <layout:Link link="sv1#area1#page1#pwu1Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

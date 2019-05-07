@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="110" gr:y="440" id="sv1#area1#page4" name="Resultatliste" secure="false" customURLName="Resultatliste" linkVisibilityPolicy="hide">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="155" gr:y="485" id="sv1#area1#page4" name="Resultatliste" secure="false" customURLName="Resultatliste" linkVisibilityPolicy="hide">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#area1#page4#pwu3" name="Resultater" sortable="true" checkable="false" useCountQuery="false" entity="ent5"/>
   </ContentUnits>

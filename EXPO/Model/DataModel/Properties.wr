@@ -1,4 +1,4 @@
-<DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
+<DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
   <Entity id="User" name="User" duration="persistent" gr:x="610" gr:y="45" gr:hideAttributes="false" attributeOrder="userOID userName password email">
     <Attribute name="userId" id="userOID" type="string" key="true"/>
     <Attribute name="userName" id="userName" type="string"/>
@@ -30,13 +30,6 @@
     <RelationshipRole1 id="Group2Module" name="modules" maxCard="N"/>
     <RelationshipRole2 id="Module2Group" name="groups" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="455" gr:y="180" id="ent1" name="Vote" duration="persistent" attributeOrder="ent1#att6">
-    <Attribute id="ent1#att6" name="weight" type="integer"/>
-  </Entity>
-  <Entity gr:x="455" gr:y="310" id="ent2" name="Stand" duration="persistent" attributeOrder="ent2#att2 ent2#att10">
-    <Attribute id="ent2#att2" key="true" name="standId" type="integer"/>
-    <Attribute id="ent2#att10" name="amount" type="integer"/>
-  </Entity>
   <Entity gr:x="295" gr:y="70" id="ent3" name="VoteConfirmedPage" duration="persistent">
     <Attribute id="ent3#att3" key="true" name="userMessage" type="string"/>
   </Entity>
@@ -45,29 +38,26 @@
     <Attribute id="ent4#att7" name="rating" type="integer"/>
     <Attribute id="ent4#att8" name="standId" type="integer"/>
   </Entity>
-  <Entity gr:x="165" gr:y="310" id="ent5" name="ResultPage" duration="persistent"/>
-  <Relationship id="rel1" name="User_Vote" sourceEntity="User" targetEntity="ent1">
-    <RelationshipRole1 id="rel1#role1" name="UserToVote" maxCard="N"/>
-    <RelationshipRole2 id="rel1#role2" name="VoteToUser" maxCard="1"/>
-  </Relationship>
-  <Relationship id="rel2" name="Vote_VoteConfirmedPage" sourceEntity="ent1" targetEntity="ent3">
-    <RelationshipRole1 id="rel2#role3" name="VoteToVoteConfirmedPage" maxCard="1"/>
-    <RelationshipRole2 id="rel2#role4" name="VoteConfirmedPageToVote" maxCard="1"/>
-  </Relationship>
-  <Relationship id="rel3" name="Vote_Stand" sourceEntity="ent1" targetEntity="ent2">
-    <RelationshipRole1 id="rel3#role5" name="VoteToStand" maxCard="1"/>
-    <RelationshipRole2 id="rel3#role6" name="StandToVote" maxCard="N"/>
-  </Relationship>
-  <Relationship id="rel4" name="Stand_ResultPage" sourceEntity="ent2" targetEntity="ent5">
-    <RelationshipRole1 id="rel4#role7" name="StandToResultPage" maxCard="1"/>
-    <RelationshipRole2 id="rel4#role8" name="ResultPageToStand" maxCard="N"/>
-  </Relationship>
+  <Entity gr:x="165" gr:y="310" id="ent5" name="ResultPage" duration="persistent" attributeOrder="ent5#att20">
+    <Attribute id="ent5#att20" name="Standnavn" type="string"/>
+  </Entity>
   <Relationship id="rel5" name="ResultPage_DatabaseHandler" sourceEntity="ent5" targetEntity="ent4">
     <RelationshipRole1 id="rel5#role9" name="ResultPageToDatabaseHandler" maxCard="1"/>
     <RelationshipRole2 id="rel5#role10" name="DatabaseHandlerToResultPage" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel6" name="DatabaseHandler_Vote" sourceEntity="ent4" targetEntity="ent1">
-    <RelationshipRole1 id="rel6#role11" name="DatabaseHandlerToVote" maxCard="N"/>
-    <RelationshipRole2 id="rel6#role12" name="VoteToDatabaseHandler" maxCard="1"/>
+  <db:Database id="db3" name="Database30000000" type="PostgreSQL 9" url="jdbc:postgresql://data1.hib.no/h571527" username="h571527" cryptedPassword="true" password="cGFzcw==">
+  </db:Database>
+  <Entity id="ent9" name="Stand" db:database="db3" duration="persistent" db:table="stand" gr:x="605" gr:y="315" db:isView="true">
+    <Attribute id="ent9#att15" name="standId" db:column="stand_id" type="string" key="true"/>
+    <Attribute id="ent9#att16" name="navn" db:column="navn" type="string" key="false"/>
+  </Entity>
+  <Entity id="ent10" name="Vote" db:database="db3" duration="persistent" db:table="vote" gr:x="395" gr:y="160">
+    <Attribute id="ent10#att17" name="standStandId" db:column="stand_stand_id" type="string" key="true"/>
+    <Attribute id="ent10#att18" name="brukerId" db:column="bruker_id" type="string" key="true"/>
+    <Attribute id="ent10#att19" name="vekt" db:column="vekt" type="integer" key="false"/>
+  </Entity>
+  <Relationship id="rel8" name="Vote_Stand" sourceEntity="ent10" targetEntity="ent9">
+    <RelationshipRole1 id="rel8#role15" name="VoteToStand" maxCard="N"/>
+    <RelationshipRole2 id="rel8#role16" name="StandToVote" maxCard="N"/>
   </Relationship>
 </DataModel>

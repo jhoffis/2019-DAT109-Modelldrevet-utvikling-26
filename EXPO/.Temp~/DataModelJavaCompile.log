@@ -1,0 +1,36 @@
+Buildfile: C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
+
+main:
+    [javac] Compiling 8 source files to C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes
+    [javac] ----------
+    [javac] 1. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 7)
+    [javac] 	private java.lang.String _navn;
+    [javac] 	                         ^^^^^
+    [javac] Duplicate field Stand._navn
+    [javac] ----------
+    [javac] 2. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 9)
+    [javac] 	private java.lang.String _navn;
+    [javac] 	                         ^^^^^
+    [javac] Duplicate field Stand._navn
+    [javac] ----------
+    [javac] 3. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 17)
+    [javac] 	public java.lang.String getNavn() {
+    [javac] 	                        ^^^^^^^^^
+    [javac] Duplicate method getNavn() in type Stand
+    [javac] ----------
+    [javac] 4. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 21)
+    [javac] 	public void setNavn(java.lang.String _navn) {
+    [javac] 	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Duplicate method setNavn(String) in type Stand
+    [javac] ----------
+    [javac] 5. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 25)
+    [javac] 	public java.lang.String getNavn() {
+    [javac] 	                        ^^^^^^^^^
+    [javac] Duplicate method getNavn() in type Stand
+    [javac] ----------
+    [javac] 6. ERROR in C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\Tomcat\webapps\Expo_Del3\WEB-INF\classes\com\webratio\webapp\Stand.java (at line 29)
+    [javac] 	public void setNavn(java.lang.String _navn) {
+    [javac] 	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] Duplicate method setNavn(String) in type Stand
+    [javac] ----------
+    [javac] 6 problems (6 errors)

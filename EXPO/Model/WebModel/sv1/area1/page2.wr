@@ -1,19 +1,18 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="310" gr:y="160" id="sv1#area1#page2" name="Stemming">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="315" gr:y="225" id="sv1#area1#page2" name="Stemming">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv1#area1#page2#dau1" name="Stjerner" entity="ent1" displayAll="true">
+    <DataUnit gr:x="0" gr:y="0" id="sv1#area1#page2#dau1" name="Stjerner" displayAll="true" entity="ent10" linkOrder="sv1#area1#page2#dau1#ln3">
       <Selector id="sv1#area1#page2#dau1#su1" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area1#page2#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area1#page2#dau1#ln11" name="Flow11" to="sv1#area1#miu3" type="transport" validate="true">
-        <LinkParameter id="sv1#area1#page2#dau1#ln11#par3" name="weight_VoteWeight" source="data.ent1#att6" target="sv1#area1#miu3.mov1#mpkg1#opm3#icu3#icp2"/>
-      </Link>
+      <Link id="sv1#area1#page2#dau1#ln3" name="Flow3" to="sv1#area1#cru2" automaticCoupling="true" type="normal" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area1#page2#dau1">
-          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent10#att19"/>
+          <layout:Link link="sv1#area1#page2#dau1#ln3"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

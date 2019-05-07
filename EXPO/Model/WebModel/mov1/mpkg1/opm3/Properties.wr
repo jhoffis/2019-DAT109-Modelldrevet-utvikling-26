@@ -8,7 +8,7 @@
       <InputCollectorParameter id="mov1#mpkg1#opm3#icu3#icp3" name="StandID"/>
       <InputCollectorParameter id="mov1#mpkg1#opm3#icu3#icp4" name="amount"/>
     </InputCollectorUnit>
-    <ModifyUnit gr:x="340" gr:y="70" id="mov1#mpkg1#opm3#mfu2" name="UpdateStandDB" entity="ent2" bulk="false" customDescriptor="false">
+    <ModifyUnit gr:x="340" gr:y="70" id="mov1#mpkg1#opm3#mfu2" name="UpdateStandDB" bulk="false" customDescriptor="false">
       <Selector id="mov1#mpkg1#opm3#mfu2#su6" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#mpkg1#opm3#mfu2#su6#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
       </Selector>
