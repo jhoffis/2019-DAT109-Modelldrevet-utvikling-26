@@ -1,0 +1,64 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="145" id="sv1#area1#page6" name="Innlogging" landmark="true">
+  <ContentUnits>
+    <EntryUnit id="sv1#area1#page6#enu7" name="regitup" linkOrder="sv1#area1#page6#enu7#ln4" gr:x="0" gr:y="10" fieldOrder="sv1#area1#page6#enu7#fld13 sv1#area1#page6#enu7#fld14">
+      <Field id="sv1#area1#page6#enu7#fld13" name="Username" type="string" modifiable="true" contentType="text/plain"/>
+      <Field id="sv1#area1#page6#enu7#fld14" name="Password" type="string" contentType="text/plain" modifiable="true"/>
+      <Link id="sv1#area1#page6#enu7#ln4" name="Register" to="sv1#area1#miu8" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page6#enu7#ln4#par12" name="Password_Password" source="sv1#area1#page6#enu7#fld14" target="sv1#area1#miu8.mov1#mpkg1#opm4#icu4#icp8"/>
+        <LinkParameter id="sv1#area1#page6#enu7#ln4#par13" name="Username_Username" source="sv1#area1#page6#enu7#fld13" target="sv1#area1#miu8.mov1#mpkg1#opm4#icu4#icp7"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv1#area1#page6#enu8" name="Login" linkOrder="sv1#area1#page6#enu8#ln5" gr:x="115" gr:y="0" fieldOrder="sv1#area1#page6#enu8#fld16 sv1#area1#page6#enu8#fld15">
+      <Link id="sv1#area1#page6#enu8#ln5" name="LOGGGINN &gt;:)" to="sv1#area1#lgu2" type="normal" customDescriptor="false" validate="false" newWindow="false">
+        <Comment xml:space="preserve">what</Comment>
+        <LinkParameter id="sv1#area1#page6#enu8#ln5#par14" name="Username_Username" source="sv1#area1#page6#enu8#fld16" target="sv1#area1#lgu2.username"/>
+        <LinkParameter id="sv1#area1#page6#enu8#ln5#par17" name="Password_Password" source="sv1#area1#page6#enu8#fld15" target="sv1#area1#lgu2.password"/>
+      </Link>
+      <Field id="sv1#area1#page6#enu8#fld15" name="Password" type="string" contentType="text/plain" modifiable="true"/>
+      <Field id="sv1#area1#page6#enu8#fld16" name="Username" type="string" contentType="text/plain" modifiable="true"/>
+      <VRules/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page6#enu7">
+          <layout:Link link="sv1#area1#page6#enu7#ln4"/>
+          <layout:Field field="sv1#area1#page6#enu7#fld13"/>
+          <layout:Field field="sv1#area1#page6#enu7#fld14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page6#enu8">
+          <layout:Field field="sv1#area1#page6#enu8#fld16"/>
+          <layout:Field field="sv1#area1#page6#enu8#fld15"/>
+          <layout:Link link="sv1#area1#page6#enu8#ln5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

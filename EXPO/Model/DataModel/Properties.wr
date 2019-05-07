@@ -33,8 +33,9 @@
   <Entity gr:x="455" gr:y="180" id="ent1" name="Vote" duration="persistent" attributeOrder="ent1#att6">
     <Attribute id="ent1#att6" name="weight" type="integer"/>
   </Entity>
-  <Entity gr:x="455" gr:y="310" id="ent2" name="Stand" duration="persistent">
+  <Entity gr:x="455" gr:y="310" id="ent2" name="Stand" duration="persistent" attributeOrder="ent2#att2 ent2#att10">
     <Attribute id="ent2#att2" key="true" name="standId" type="integer"/>
+    <Attribute id="ent2#att10" name="amount" type="integer"/>
   </Entity>
   <Entity gr:x="295" gr:y="70" id="ent3" name="VoteConfirmedPage" duration="persistent">
     <Attribute id="ent3#att3" key="true" name="userMessage" type="string"/>

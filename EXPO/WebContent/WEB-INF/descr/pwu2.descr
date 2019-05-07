@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.utility.rtx.PasswordUnitService" name="AdminPassword">
+  <PasswordUnit xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="pwu2" name="AdminPassword" passwordSize="8" _sel="t">
+    <Link id="ln10" name="Flow10" to="page4" automaticCoupling="true" type="normal" validate="true" _sel="t"/>
+  </PasswordUnit>
+</Descriptor>

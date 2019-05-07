@@ -1,10 +1,14 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="235" gr:y="185" id="sv1#area1" name="Hoveddeler" landmark="true" defaultPage="sv1#area1#page1">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="235" gr:y="35" id="sv1#area1" name="Hoveddeler" landmark="true" defaultPage="sv1#area1#page1" landmarks="sv1#area1#page1 sv1#area1#page6">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="430" gr:y="300" id="sv1#area1#miu2" action="false" name="Weight" linkOrder="sv1#area1#miu2#ln8">
-      <Link id="sv1#area1#miu2#ln8" name="Flow8" to="sv1#area1#miu3" automaticCoupling="true" type="transport" validate="true"/>
-    </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="565" gr:y="195" id="sv1#area1#miu3" action="true" name="UpdateDB" linkOrder="sv1#area1#miu3#ln9">
+    <ModuleInstanceUnit gr:x="540" gr:y="290" id="sv1#area1#miu3" action="true" name="UpdateDB" moduleId="mov1#mpkg1#opm3">
       <Link id="sv1#area1#miu3#ln9" name="Flow9" to="sv1#area1#page3" automaticCoupling="true" type="transport" validate="true"/>
+    </ModuleInstanceUnit>
+    <LoginUnit gr:x="190" gr:y="325" id="sv1#area1#lgu2" name="Login2">
+      <OKLink id="sv1#area1#lgu2#oln6" name="OKFlow6" to="sv1#area1#page4" automaticCoupling="true"/>
+      <KOLink id="sv1#area1#lgu2#kln4" name="KOFlow4" to="sv1#area1#page6" automaticCoupling="true"/>
+    </LoginUnit>
+    <ModuleInstanceUnit gr:x="0" gr:y="325" id="sv1#area1#miu8" action="true" name="Register" moduleId="mov1#mpkg1#opm4">
+      <OKLink id="sv1#area1#miu8#oln10" name="OKFlow10" to="sv1#area1#page4" automaticCoupling="true"/>
     </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

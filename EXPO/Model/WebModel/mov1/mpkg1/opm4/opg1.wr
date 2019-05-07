@@ -1,0 +1,13 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#mpkg1#opm4#opg1" name="Register" transaction="true" gr:x="485" gr:y="60">
+  <OperationUnits>
+    <CreateUnit id="mov1#mpkg1#opm4#opg1#cru3" name="Create User" gr:x="0" gr:y="0" entity="User">
+      <OKLink id="mov1#mpkg1#opm4#opg1#cru3#oln7" name="OKLink111" to="mov1#mpkg1#opm4#opg1#lgu3">
+        <LinkParameter id="mov1#mpkg1#opm4#opg1#cru3#oln7#par15" name="Username" source="userNameArray" target="mov1#mpkg1#opm4#opg1#lgu3.username"/>
+        <LinkParameter id="mov1#mpkg1#opm4#opg1#cru3#oln7#par16" name="Password" source="passwordArray" target="mov1#mpkg1#opm4#opg1#lgu3.password"/>
+      </OKLink>
+    </CreateUnit>
+    <LoginUnit id="mov1#mpkg1#opm4#opg1#lgu3" name="Login" gr:x="225" gr:y="5">
+      <OKLink id="mov1#mpkg1#opm4#opg1#lgu3#oln11" name="OKFlow11" to="mov1#mpkg1#opm4#okcu2" automaticCoupling="true"/>
+    </LoginUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,14 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="360" gr:y="5" id="mov1#mpkg1#opm4" name="Action 4">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg1#opm4#icu4" gr:x="30" gr:y="60">
+      <Link id="mov1#mpkg1#opm4#icu4#ln27" name="Flow27" to="mov1#mpkg1#opm4#opg1#cru3" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg1#opm4#icu4#ln27#par20" name="Password_password" source="mov1#mpkg1#opm4#icu4#icp8" target="mov1#mpkg1#opm4#opg1#cru3.password"/>
+        <LinkParameter id="mov1#mpkg1#opm4#icu4#ln27#par21" name="Username_userName" source="mov1#mpkg1#opm4#icu4#icp7" target="mov1#mpkg1#opm4#opg1#cru3.userName"/>
+      </Link>
+      <InputCollectorParameter id="mov1#mpkg1#opm4#icu4#icp8" name="Password"/>
+      <InputCollectorParameter id="mov1#mpkg1#opm4#icu4#icp7" name="Username"/>
+      <OKLink id="mov1#mpkg1#opm4#icu4#oln8" name="OKFlow8" to="mov1#mpkg1#opm4#opg1#cru3" automaticCoupling="true" gr:bendpoints="233,34,-177,-1"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="865" gr:y="95" id="mov1#mpkg1#opm4#okcu2" name="Thats ok"/>
+  </OperationUnits>
+</OperationModule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning error="false" xpath="id('sv1#area1#page5')" rootXPath="id('sv1')" key="" label="Innlogging"> 
+    <Message>Security Warning: the page 'Innlogging' is public but no captcha field is configured on its form component</Message> 
+  </Warning> 
+</Warnings>
