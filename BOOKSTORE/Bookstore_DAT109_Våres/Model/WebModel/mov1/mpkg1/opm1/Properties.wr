@@ -1,0 +1,21 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov1#mpkg1#opm1" name="Empty Cart">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg1#opm1#icu1" name="Input Collector" gr:x="30" gr:y="60" linkOrder="mov1#mpkg1#opm1#icu1#ln12">
+      <Link id="mov1#mpkg1#opm1#icu1#ln12" name="Flow12" to="mov1#mpkg1#opm1#seu2" automaticCoupling="true" type="transport" validate="true"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="770" gr:y="65" id="mov1#mpkg1#opm1#okcu2" name="Success"/>
+    <SelectorUnit gr:x="285" gr:y="60" id="mov1#mpkg1#opm1#seu2" name="Cart" entity="ent21">
+      <Link id="mov1#mpkg1#opm1#seu2#ln14" name="Flow14" to="mov1#mpkg1#opm1#inn1" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="585" gr:y="200" id="mov1#mpkg1#opm1#inn1" name="Hvis eksisterer">
+      <OKLink id="mov1#mpkg1#opm1#inn1#oln2" name="OKFlow2" to="mov1#mpkg1#opm1#dlu1" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg1#opm1#inn1#kln1" name="KOFlow1" to="mov1#mpkg1#opm1#okcu2" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <DeleteUnit gr:x="575" gr:y="70" id="mov1#mpkg1#opm1#dlu1" name="Slett cart" entity="ent21">
+      <Selector id="mov1#mpkg1#opm1#dlu1#su6" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg1#opm1#dlu1#su6#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="mov1#mpkg1#opm1#dlu1#ln15" name="Flow15" to="mov1#mpkg1#opm1#okcu2" automaticCoupling="true" type="transport" validate="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationModule>

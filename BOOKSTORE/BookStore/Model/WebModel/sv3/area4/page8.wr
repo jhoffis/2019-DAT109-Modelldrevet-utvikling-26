@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv3#area4#page8" name="ProuductCategories" landmark="true" protected="false" secure="false" localized="false" ignoreMasterPage="false" customDescriptor="false">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv3#area4#page8#pwu1" name="CategoryList" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv3#area4#page8#pwu1#ln16">
+      <Link id="sv3#area4#page8#pwu1#ln16" name="Flow16" to="sv3#area4#page10#pwu2" type="normal" validate="true" newWindow="false" preserveForm="false" customDescriptor="false">
+        <LinkParameter id="sv3#area4#page8#pwu1#ln16#par18" name="oid_Block Factor" source="data[].ent6#att19" target="sv3#area4#page10#pwu2.blockFactor"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area4#page8#pwu1">
+          <layout:Link link="sv3#area4#page8#pwu1#ln16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

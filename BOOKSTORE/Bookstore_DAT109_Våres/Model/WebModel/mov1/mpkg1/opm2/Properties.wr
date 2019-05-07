@@ -1,0 +1,15 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="135" gr:y="0" id="mov1#mpkg1#opm2" name="Update Quantities">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg1#opm2#icu2" gr:x="30" gr:y="60">
+      <Link id="mov1#mpkg1#opm2#icu2#ln11" name="Flow11" to="mov1#mpkg1#opm2#mfu2" automaticCoupling="true" type="transport" validate="true"/>
+      <InputCollectorParameter id="mov1#mpkg1#opm2#icu2#icp1" name="carId"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="485" gr:y="60" id="mov1#mpkg1#opm2#okcu1" name="Success"/>
+    <ModifyUnit gr:x="310" gr:y="45" id="mov1#mpkg1#opm2#mfu2" name="Update" entity="ent21">
+      <Selector id="mov1#mpkg1#opm2#mfu2#su5" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg1#opm2#mfu2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="mov1#mpkg1#opm2#mfu2#ln10" name="Flow10" to="mov1#mpkg1#opm2#okcu1" automaticCoupling="true" type="transport" validate="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationModule>

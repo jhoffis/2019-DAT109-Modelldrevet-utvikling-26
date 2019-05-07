@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page6" name="Shopping Cart" gr:x="0" gr:y="5">
+  <ContentUnits>
+    <PowerIndexUnit id="sv1#area3#page6#pwu3" name="Product List" linkOrder="sv1#area3#page6#pwu3#ln5 sv1#area3#page6#pwu3#ln6" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent21" displayAttributes="ent21#att78">
+      <Link id="sv1#area3#page6#pwu3#ln5" name="Flow26" to="sv1#area3#miu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area3#page6#pwu3#ln5#par4" name="carId_PASSING" source="data[].ent21#att69" passing="true"/>
+      </Link>
+      <Link id="sv1#area3#page6#pwu3#ln6" name="Flow37" to="sv1#area3#miu1" type="normal" automaticCoupling="true" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page6#pwu3">
+          <layout:Link link="sv1#area3#page6#pwu3#ln5"/>
+          <layout:Link link="sv1#area3#page6#pwu3#ln6"/>
+          <layout:Attribute attribute="ent21#att78"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
